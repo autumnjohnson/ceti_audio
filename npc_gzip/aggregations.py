@@ -1,6 +1,5 @@
 import itertools
 import numpy as np
-
 def concatenate_audio_bytes(bytesa: bytes, bytesb: bytes) -> bytes:
     """
     Combines ` bytesa` and `bytesb` as audio files
@@ -12,7 +11,7 @@ def concatenate_audio_bytes(bytesa: bytes, bytesb: bytes) -> bytes:
     Returns:
         bytes: `{bytesa} {bytesb}`
     """
-    return np.hstack(bytesa, bytesb)
+    return  np.hstack((bytesa, bytesb))
     
 def mix_audio_files(filea, fileb):
     return filea + fileb
