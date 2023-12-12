@@ -14,7 +14,7 @@ def concatenate_audio_bytes(bytesa: bytes, bytesb: bytes) -> bytes:
     return np.hstack(bytesa, bytesb)
     
 def mix_audio_files(filea, fileb):
-    return rile
+    return filea + fileb
     
 def concatenate_with_space(stringa: str, stringb: str) -> str:
     """

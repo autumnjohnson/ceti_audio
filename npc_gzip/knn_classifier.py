@@ -215,7 +215,7 @@ class KnnClassifier:
 
         combined: list = []
         for training_sample in training_inputs:
-            train_and_x: bytes = concatenate_audio_bytes(training_sanple, x# concatenate_with_space(training_sample, x)
+            train_and_x: bytes = concatenate_audio_bytes(training_sample, x)# concatenate_with_space(training_sample, x)
             combined_compressed: int = self.compressor.get_compressed_length(
                 train_and_x
             )
@@ -357,7 +357,7 @@ class KnnClassifier:
 
         similar_samples: np.ndarray = training_inputs[minimum_distance_indices]
         labels: np.ndarray = training_labels[minimum_distance_indices]
-   
-    
+
+
 
         return distances, labels, similar_samples
