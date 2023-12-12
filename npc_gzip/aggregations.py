@@ -1,4 +1,5 @@
 import itertools
+import numpy as np
 
 def concatenate_audio_bytes(bytesa: bytes, bytesb: bytes) -> bytes:
     """
