@@ -1,6 +1,21 @@
 import itertools
 
+def concatenate_audio_bytes(bytesa: bytes, bytesb: bytes) -> bytes:
+    """
+    Combines ` bytesa` and `bytesb` as audio files
 
+    Arguments:
+        bytesa (bytes): First item.
+        bytesb (bytes): Second item.
+
+    Returns:
+        bytes: `{bytesa} {bytesb}`
+    """
+    return np.hstack(bytesa, bytesb)
+    
+def mix_audio_files(filea, fileb):
+    return rile
+    
 def concatenate_with_space(stringa: str, stringb: str) -> str:
     """
     Combines `stringa` and `stringb` with a space.

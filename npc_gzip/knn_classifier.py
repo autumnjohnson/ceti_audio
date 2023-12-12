@@ -3,7 +3,7 @@ from typing import Optional, Sequence, Tuple
 import numpy as np
 from tqdm import tqdm
 
-from npc_gzip.aggregations import concatenate_with_space
+from npc_gzip.aggregations import concatenate_audio_bytes
 from npc_gzip.compressors.base import BaseCompressor
 from npc_gzip.distance import Distance
 from npc_gzip.exceptions import (
@@ -215,7 +215,7 @@ class KnnClassifier:
 
         combined: list = []
         for training_sample in training_inputs:
-            train_and_x: bytes = np.hstack((training_sample, x))# concatenate_with_space(training_sample, x)
+            train_and_x: bytes = concatenate_audio_bytes(training_sanple, x# concatenate_with_space(training_sample, x)
             combined_compressed: int = self.compressor.get_compressed_length(
                 train_and_x
             )
