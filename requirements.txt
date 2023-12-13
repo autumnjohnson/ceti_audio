@@ -1,0 +1,11 @@
+datasets
+ipython
+matplotlib
+numpy
+pandas
+pydub
+Requests
+scikit_learn
+soundfile
+torch
+tqdm
