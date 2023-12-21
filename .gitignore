@@ -149,3 +149,4 @@ environment.yml
 requirements-dev.txt
 .gitattributes
 filter_graph.png
+*.flac
