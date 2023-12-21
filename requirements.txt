@@ -1,5 +1,5 @@
 datasets
-ipython
+IPython
 matplotlib
 numpy
 pandas
@@ -9,3 +9,8 @@ scikit_learn
 soundfile
 torch
 tqdm
+ffmpeg-python
+pyflac
+nbconvert
+sox
+graphviz

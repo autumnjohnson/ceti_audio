@@ -148,3 +148,4 @@ environment.yml
 .jupyter/
 requirements-dev.txt
 .gitattributes
+filter_graph.png
