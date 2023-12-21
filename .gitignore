@@ -144,5 +144,7 @@ data
 
 .editorconfig
 pyproject.toml
+environment.yml
 .jupyter/
 requirements-dev.txt
+.gitattributes
